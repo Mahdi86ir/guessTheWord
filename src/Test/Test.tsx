@@ -10,13 +10,17 @@ interface AlertProps {
 function StartQuizAlert({startQuiz}:AlertProps){
 
   return(
-    <>
-        <div className="actionParent">
-          <span>
-            <button onClick={startQuiz} className='btn' >شروع آزمون</button>
-          </span>
-        </div>
-    </>
+    <div className='alert'>
+      <div className='alert-text'>
+        <h2>مرحله آموزشی به پایان رسید ✅</h2>
+        <h3>وارد مرحله اصلی آزمون میشویم.</h3>
+      </div>
+      <div className="actionParent" id='alertBtn'>
+        <span>
+          <button onClick={startQuiz} className='btn' >شروع آزمون</button>
+        </span>
+      </div>
+    </div>
   )
 }
 
@@ -87,6 +91,7 @@ export default function Test() {
     }
     !start && setProgress(prevProgress => prevProgress + 2)
     setAnswer("")
+    setIsDisable(true)
   }
 
   const startingQuiz = () => {

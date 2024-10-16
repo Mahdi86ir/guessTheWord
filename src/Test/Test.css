@@ -26,10 +26,10 @@ form{
     background-color: #ffffff;
 }
 .progressInfo h1{
-    font-size: 1.3vw;
+    font-size: 25px;
 }
 .progressInfo h2{
-    font-size: 1vw;
+    font-size: 18px;
 }
 
 .progress-bar{
@@ -60,13 +60,14 @@ form{
     flex-direction: column;
     align-items: end;
     gap: 10px;
+    /* text-align: justify; */
 }
 .question h2{
-    font-size: 2vw;
+    font-size: 30px;
     direction: rtl;
 }
 .question p{
-    font-size: 1.5vw;
+    font-size: 18px;
 }
 
 .inp{
@@ -74,7 +75,7 @@ form{
     height: 50px;
     border-radius: 10px;
     border: 1px solid;
-    font-size: 1vw;
+    font-size: 18px;
     outline: none;
     padding: 10px;
 }
@@ -129,4 +130,97 @@ form{
     justify-content: center;
     align-items: center;
     gap: 10px;
+}
+.alert{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#alertBtn{
+    justify-content: center;
+}
+.alert-text{
+    text-align: center;
+    direction: rtl;
+}
+@media only screen and (max-width:960px) {
+    .btn{
+        padding: 15px 80px;
+    }
+    .btn:hover{
+        padding: 15px 85px;
+    }
+}
+@media only screen and (max-width:800px) {
+    .question h2{
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .question h2{
+        font-size: 15px;
+    }
+    .question p{
+        font-size: 14px;
+    }
+    .inp{
+        width: 250px;
+        height: 40px;
+    }
+    .alert-text h2{
+        font-size: 20px;
+    }
+    .alert-text h3{
+        font-size: 16px;
+    }
+}
+@media only screen and (max-width:400px) {
+    .progressInfo h1{
+        font-size: 20px;
+    }
+    .progressInfo h2{
+        font-size: 14px;
+    }
+    .progress-container{
+        padding: 5px;
+        font-size: 12px;
+    }
+    .inp{
+        width: 200px;
+        height: 40px;
+    }
+    .btn{
+        padding: 10px 60px;
+    }
+    .btn:hover{
+        padding: 10px 65px;
+    }
+    .actionParent{
+        justify-content: center;
+    }
+}
+@media only screen and (max-width:340px) {
+    .alert-text h2{
+        font-size: 17px;
+    }
+    .alert-text h3{
+        font-size: 13px;
+    }
+}
+@media only screen and (max-width:300px) {
+    .btn{
+        padding: 10px 50px;
+    }
+    .btn:hover{
+        padding: 10px 55px;
+    }
+    .inp{
+        width: 200px;
+        height: 30px;
+        font-size: 12px;
+    }
+    
 }
