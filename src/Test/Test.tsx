@@ -36,7 +36,6 @@ export default function Test() {
   const [scoreStreek , setScoreStreek] = useState<number>(0)
   const [quizAlert , setQuizAlert] = useState<boolean>(false)
   let scoreSum = 0
-  let percentage = 0
   const [progress , setProgress] = useState<number>(0)
   const addingInputVals = (e:ChangeEvent<HTMLInputElement>) =>{
     setAnswer(e.target.value)
