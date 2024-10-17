@@ -41,6 +41,8 @@ export default function Test() {
   const [quizAlert , setQuizAlert] = useState<boolean>(false)
   let scoreSum = 0
   const [progress , setProgress] = useState<number>(0)
+
+  
   const addingInputVals = (e:ChangeEvent<HTMLInputElement>) =>{
     setAnswer(e.target.value)
     setIsDisable(false)
@@ -68,6 +70,7 @@ export default function Test() {
     e.preventDefault()
     if(dataIndex === dataQuiz.length && index == 4){
       setEnd(true)
+      console.log(score)
       return
     }
 
